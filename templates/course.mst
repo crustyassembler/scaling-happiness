@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/style.css">
+<title>Course portal || {{ course.name }}</title>
+<p><a href="/basket.html">Basket: <span id="basket-count">0</span></a></p>
+<img src="/succ.jpg">
+<h1><a href="/index.html">Course portal</a></h1>
+<h2>{{ course.name }}</h2>
+<input id="basket-add" type="button" value="Apply Now" data-course-name="{{ course.name }}" data-course-id="{{ course.id }}">
+<p>{{ course.description }}</p>
+<script src="/app.js"></script>
+<script src="/course.js"></script>

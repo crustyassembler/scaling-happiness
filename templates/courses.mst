@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="/style.css">
+<title>Course portal || courses</title>
+<p><a href="/basket.html">Basket: <span id="basket-count">0</span></a></p>
+<img src="/succ.jpg">
+<h1><a href="/index.html">Course portal</a></h1>
+<h2>Courses</h2>
+<form action="/courses/search" method="GET">
+  <input type="search" name="q" placeholder="Search courses">
+</form>
+<ul>
+  {{#courses}}
+  <li class=".course">
+      <a href="/course/{{ id }}">{{ name }}</a>
+      <p>{{ description }}</p>
+  </li>
+  {{/courses}}
+</ul>
+<script src="/app.js"></script>
